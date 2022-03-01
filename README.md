@@ -74,15 +74,14 @@ Complete a month cost analysis of each Azure resource to give an estimate total 
 This is a placeholder section where you can provide an explanation and reasoning for your architecture selection for both the Azure Web App and Azure Function.
 
 *Azure Web App*
-Quick and easy to setup
-Scalable to handle user load at peak by using scale up and scale out
-No need for managing Infrastructure
-Python is supported
-Cheeper and cost-effective than Azure VM  
+- Scaling can be automatically for both vertical and horizontal requirements
+- Azure handle infrastructure, no need effort for maintenance
+- Have App Service Pricing Tier to go with will mainly come down to pricing (budget) and network base on requirement
 
 *Azure Functions*
-Queue based background jobs solve HTTP timeout exceptions and result faster response time, and better user experience.
-No need for managing Infrastructure
-Cost management, can predictable or cost by consuming
-scalable architecture
+- Sending email does not need immediate execution, so remove logic in webapp that cause http timeout to background job
+- Azure handle infrastructure, no need effort for maintenance
+- Design of microservices
+- Saving costs, choosing hosting options base of requirement
+
 
